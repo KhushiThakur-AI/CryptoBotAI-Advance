@@ -159,7 +159,7 @@ The project follows a **modular architecture** for scalability and maintainabili
 ## Screenshots
 
 ### All project files
-![All project files list](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/raw/main/ALL%20FILES%20LIST%20PNG.png)
+![All project files list](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/blob/main/All%20File%20PNG.png)
 
 ### Console output
 ![Console output](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/raw/main/Console%20Outcomes.png)
