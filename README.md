@@ -128,7 +128,7 @@ To configure the project for your environment:
 2. Install Dependencies
 python command (Run in Replit Shell)
 pip install -r requirements.txt
-(or use npm install if your project uses Node.js)
+(or use npm install if your project uses Node.js) 
 
 3. Set Environment Variables
 Create a .env file in the root directory.
