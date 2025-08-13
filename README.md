@@ -134,47 +134,51 @@ SECRET_KEY=your_secret_key
 python main.py
 ---
 
-###Architecture
-The project follows a modular architecture for scalability and maintainability:
-Core Modules – Main application logic and services.
-API Layer – Handles requests, responses, and third-party API integration.
-Database Layer – Manages data storage and retrieval.
-Utilities – Helper functions and reusable scripts.
-Configuration – Environment-specific settings.
-UI / Dashboard (if applicable) – Frontend or monitoring interface.
+## Architecture
+The project follows a **modular architecture** for scalability and maintainability:
 
-Flow Overview:
-Input is received from API/Frontend.
-Processed through core logic modules.
-Data is fetched/stored in the database.
-Output is returned or displayed in the UI.
+- **Core Modules** – Main application logic and services.
+- **API Layer** – Handles requests, responses, and third-party API integration.
+- **Database Layer** – Manages data storage and retrieval.
+- **Utilities** – Helper functions and reusable scripts.
+- **Configuration** – Environment-specific settings.
+- **UI / Dashboard** *(if applicable)* – Frontend or monitoring interface.
 
-###Roadmap
+**Flow Overview:**
+1. Input is received from API/Frontend.
+2. Processed through core logic modules.
+3. Data is fetched/stored in the database.
+4. Output is returned or displayed in the UI.
+
+---
+
+## Roadmap
 Planned improvements and upcoming features:
- Add automated testing coverage.
- Enhance error handling and logging.
- Implement caching for faster performance.
- Add multi-language support.
- Integrate advanced analytics and reporting.
- Optimize for mobile and tablet interfaces.
- Expand API integrations for new data sources.
 
-###Contributing
-We welcome contributions!
+- [ ] Add automated testing coverage.
+- [ ] Enhance error handling and logging.
+- [ ] Implement caching for faster performance.
+- [ ] Add multi-language support.
+- [ ] Integrate advanced analytics and reporting.
+- [ ] Optimize for mobile and tablet interfaces.
+- [ ] Expand API integrations for new data sources.
 
-Steps to Contribute:
-Fork the repository.
-Create a new branch:
+---
 
+## Contributing
+We welcome contributions! 🎉
 
-git checkout -b feature/YourFeature
-Commit changes:
+**Steps to Contribute:**
+1. **Fork** the repository.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+3. Commit changes:
+
 git commit -m "Add your message here"
 Push to your fork:
+
 git push origin feature/YourFeature
 Open a Pull Request on GitHub.
 
-Please ensure your code follows the existing style and includes documentation for new features.
-
-License
- 
+IMP = Please ensure your code follows the existing style and includes documentation for new features.
