@@ -1,5 +1,8 @@
 # CryptoBotAI-Advance
-This is a advance crypto trading bot that is an update of my old bot. This current bot has around 25 + features added to it and more to go. It is currently intelligent but need more work.
+This is a advance crypto trading bot that is an update of my old bot. This current bot has around 25 + more features added to it and still advancement and multiple test and needed. It is currently intelligent but need more work.
+
+The main.py file has more than 2500+ lines of code that are responsible for running the entire crypto trading bot smoothly. 
+
 # CryptoBotAI-Advance 🚀
 
 ## Features
