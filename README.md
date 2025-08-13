@@ -21,6 +21,11 @@
 - [Quick Start](#quick-start)
 - [Configuration](#configuration)
 - [Architecture](#architecture)
+-  - [Screenshots](#screenshots)
+    - [All project files](#all-project-files)
+    - [Console output](#console-output)
+    - [Streamlit dashboard](#streamlit-dashboard)
+    - [Telegram upgrades](#telegram-upgrades)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -149,6 +154,21 @@ The project follows a **modular architecture** for scalability and maintainabili
 2. Processed through core logic modules.
 3. Data is fetched/stored in the database.
 4. Output is returned or displayed in the UI.
+
+---
+## Screenshots
+
+### All project files
+![All project files list](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/raw/main/ALL%20FILES%20LIST%20PNG.png)
+
+### Console output
+![Console output](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/raw/main/Console%20Outcomes.png)
+
+### Streamlit dashboard
+![Streamlit dashboard](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/raw/main/Streamlit%20Dashboard.png)
+
+### Telegram upgrades
+![Telegram upgrades](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/raw/main/Telegram%20Updates.png)
 
 ---
 
