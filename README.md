@@ -176,11 +176,20 @@ We welcome contributions! 🎉
 3. Commit changes:
      ```bash
      git commit -m "Add your message here"
-Push to your fork:
+4. Push to your fork:
    ```bash
 git push origin feature/YourFeature
 Open a Pull Request on GitHub.
 
 IMP = Please ensure your code follows the existing style and includes documentation for new features.
+---
+## License
+This project is licensed under the **MIT License**. You can view the full terms in the [LICENSE file](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/blob/main/LICENSE).
+---
+###Keyword SEO
+advanced AI crypto trading bot, automated crypto trading, cryptocurrency bot, algorithmic trading software, Binance trading bot, crypto market analysis, sentiment-based trading, AI trading system, machine learning crypto bot, real-time trading dashboard
+
+```bash
+If you want, I can **replace the generic “Architecture”** with one that specifically matches your **AI crypto bot** tech stack — Binance API, Google Sheets logging, Telegram manual trades, sentiment analysis, and async architecture — so the README is not just template-like but actually reflective of your real setup. That would make it much more professional and credible.
 
 
