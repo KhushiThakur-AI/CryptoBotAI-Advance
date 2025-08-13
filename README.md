@@ -125,7 +125,7 @@ python command (Run in Replit Shell)
 pip install -r requirements.txt
 (or use npm install if your project uses Node.js)
 
-3.Set Environment Variables
+3. Set Environment Variables
 Create a .env file in the root directory.
 Add your API keys, tokens, and configuration settings: API_KEY=your_api_key
 SECRET_KEY=your_secret_key
