@@ -153,15 +153,32 @@ The project follows a **modular architecture** for scalability and maintainabili
 ---
 
 ## Roadmap
-Planned improvements and upcoming features:
+### ✅ Done (Highlights)
+- **Daily Max Loss & Trade Cap** – Risk control to limit daily exposure
+- **Manual Trade via Telegram** – Inline buttons, restricted access
+- **Trailing Stop-Loss (Basic)** – Protects profits and limits losses
+- **Profit Target Exits** – Automated take-profit triggers
+- **Diversification & Multi-Timeframe Confirmation** – Safer trade entries
+- **Backtesting (Price-Based)** – Strategy testing with win/loss tracking
 
-- [ ] Add automated testing coverage.
-- [ ] Enhance error handling and logging.
-- [ ] Implement caching for faster performance.
-- [ ] Add multi-language support.
-- [ ] Integrate advanced analytics and reporting.
-- [ ] Optimize for mobile and tablet interfaces.
-- [ ] Expand API integrations for new data sources.
+---
+
+### 🔜 Planned & In-Progress
+- **Async Execution** – `asyncio` + `aiohttp` for concurrent I/O
+- **Win/Loss Analytics** – Rolling win%, average PnL
+- **Historical Sentiment for Backtests** – Archived RSS, Reddit, CryptoPanic sentiment
+- **Market Depth & Slippage** – More realistic order fills
+- **AI Signal Explanation** – GPT-generated trade labels & reasoning
+- **Streamlit Dashboard Enhancements** – Live charts, manual overrides, P&L (in progress)
+- **Live Exchange Execution** – Binance authenticated orders with safeguards
+- **Advanced News Sentiment AI** – Weighted fusion of RSS + Reddit + CryptoPanic
+- **Multi-Exchange Support** – KuCoin, Bybit, Kraken
+- **ML Signal Boost** – XGBoost / LightGBM model integration
+- **Smart Exits** – ATR-based trailing stop-loss, adaptive rules
+- **Portfolio Optimization** – Performance & volatility-aware allocation
+- **Alert System** – Breakouts, whale moves, sentiment spikes
+- **Config Overhaul** – Full JSON/YAML support, hot-reload capability
+- **Error Recovery & Retry** – Resilient 24/7 runtime
 
 ---
 
