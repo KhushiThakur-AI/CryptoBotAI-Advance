@@ -105,11 +105,30 @@ Per-symbol worksheets (BTCUSDT, ETHUSDT, etc.)
 | 34 | Market Depth & Slippage           | Model bid/ask & liquidity                             | Realistic fills                    | 🔜 Planned| Order-book aware                     |
 | 35 | AI Integration                    | GPT explains/labels signals                           | Transparency & debugging           | 🔜 Planned| Auto trade labeling                  |
 ---
-
-
 ## Quick Start
-```bash
+
 git clone https://github.com/KhushiThakur-AI/CryptoBotAI-Advance.git
 cd CryptoBotAI-Advance
 pip install -r requirements.txt
+python main.py
+---
+
+## Configuration
+To configure the project for your environment:
+
+1. **Clone the Repository**
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   
+2. Install Dependencies
+python command (Run in Replit Shell)
+pip install -r requirements.txt
+(or use npm install if your project uses Node.js)
+
+3.Set Environment Variables
+Create a .env file in the root directory.
+Add your API keys, tokens, and configuration settings: API_KEY=your_api_key
+SECRET_KEY=your_secret_key
+
+4. Run the Application
 python main.py
