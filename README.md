@@ -195,6 +195,7 @@ advanced AI crypto trading bot, automated crypto trading, cryptocurrency bot, al
 If you are **new to coding**, **crypto trading**, or both, it is highly recommended to use an **LLM (Large Language Model)** such as:
 - [ChatGPT](https://chat.openai.com/)
 - [Replit AI Assistant](https://replit.com/ai)
+- [Gemini AI](https://gemini.google.com/)
 
 These tools can:
 - Help you understand the project structure.
