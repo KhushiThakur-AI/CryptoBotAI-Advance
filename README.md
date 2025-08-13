@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">CryptoBotAI‑Advance</h1>
-<p align="center">AI‑assisted crypto trading bot with multi‑indicator signals, news & Reddit sentiment, Telegram controls, and risk management.</p>
+<p align="center">AI‑assisted crypto trading bot with multi‑indicator signals, RSS, news & Reddit sentiment, Telegram controls, 2500+ coding lines and risk management.</p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
