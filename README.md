@@ -25,7 +25,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Keywords (SEO)](#keywords-seo)
-
+- [Tips & Disclaimer](#tips--disclaimer)
 ---
 
 🚀 Features (Old Bot)
@@ -188,8 +188,32 @@ This project is licensed under the **MIT License**. You can view the full terms 
 ---
 ### Keyword SEO
 advanced AI crypto trading bot, automated crypto trading, cryptocurrency bot, algorithmic trading software, Binance trading bot, crypto market analysis, sentiment-based trading, AI trading system, machine learning crypto bot, real-time trading dashboard
+---
+## Tips & Disclaimer
 
-```bash
-If you want, I can **replace the generic “Architecture”** with one that specifically matches your **AI crypto bot** tech stack — Binance API, Google Sheets logging, Telegram manual trades, sentiment analysis, and async architecture — so the README is not just template-like but actually reflective of your real setup. That would make it much more professional and credible.
+### Tips for Non-Technical Users
+If you are **new to coding**, **crypto trading**, or both, it is highly recommended to use an **LLM (Large Language Model)** such as:
+- [ChatGPT](https://chat.openai.com/)
+- [Replit AI Assistant](https://replit.com/ai)
+
+These tools can:
+- Help you understand the project structure.
+- Guide you through configuration and setup.
+- Explain crypto-related concepts in plain language.
+- Assist in customizing this bot for your own needs.
+
+> **Important:** This repository should be treated as a **reference project**.  
+> Do **not** blindly copy-paste the code without understanding how it works.  
+> Your own **research, testing, and strategic thinking** are essential for building a successful and sustainable trading bot.
+
+---
+
+### Disclaimer
+- I am **not** a licensed financial advisor.  
+- This project is for **educational purposes only**.  
+- Trading cryptocurrencies involves **high risk**, and you should only invest what you can afford to lose.  
+- The author(s) are **not responsible** for any financial losses incurred from using this code.
+
+> By using this repository, you acknowledge that you are solely responsible for your trading decisions.
 
 
