@@ -28,18 +28,51 @@
 
 ---
 
-## Features
-- **Multi‑indicator strategy:** RSI, EMA, MACD, Bollinger Bands, Stochastic RSI, ADX  
-- **Sentiment fusion:** CryptoPanic API + top 5 crypto RSS feeds (CoinDesk, CoinTelegraph, CryptoSlate, Bitcoin Magazine, Decrypt) + Reddit (r/cryptocurrency, r/bitcoin, r/cryptomarkets) with NLP scoring  
-- **Risk controls:** Daily max loss/cap, trailing stop‑loss (TSL), profit targets  
-- **Capital allocation:** %‑based sizing, diversification across top signals  
-- **Multi‑timeframe confirmation** (e.g., 15m + 1h)  
-- **Telegram control:** Inline Buy/Sell, manual overrides, run‑state messages  
-- **Logging:** Firestore + (planned) Google Sheets with weekly summaries  
-- **Backtesting:** Price‑based simulator, win/loss tracking  
-- **Modular configs:** JSON/YAML for symbols, thresholds, filters  
-- **Security & resilience:** HMAC signing, input validation, retry/failover logic
+🚀 Features
+📊 Multi-Indicator Strategy
+RSI – Overbought/oversold detection
 
+MACD – Momentum shift confirmation
+
+EMA – Trend following
+
+ADX – Trend strength
+
+Bollinger Bands – Volatility breakout
+
+Stochastic RSI – Entry timing (where used)
+
+🛡 Risk Management
+✅ Stop-Loss (SL), ✅ Take-Profit (TP), ✅ Trailing Stop-Loss (TSL)
+
+✅ Daily Max Loss Guard
+
+✅ Cooldown + Duplicate-Trade Blocker
+
+🧠 Smart Trade Logic
+Trade Confidence Score (weighted multi-indicator confirmation)
+
+Per-coin configuration via config.json
+
+Multi-timeframe confirmation (e.g., 15m + 1h)
+
+📤 Telegram Alerts
+📈 Trade Executed (BUY/SELL)
+
+🚨 SL/TP/TSL Triggered
+
+🧾 Trade Summary (daily/weekly)
+
+⚠️ Capital issues / loss guard
+
+📄 Google Sheets Logging
+✅ Trade history
+
+✅ P&L tracking
+
+✅ Per-symbol worksheets (e.g., BTCUSDT, ETHUSDT)
+
+Optional: Firestore for real-time logging/state.
 ---
 
 ## Quick Start
