@@ -73,26 +73,49 @@ CryptoBotAI-Advance/
 `Week Start | Week End | Total Trades | Winning Trades | Losing Trades | Win Rate (%) | Gross Profits | Gross Losses | Net Profit | Symbols Traded`
 
 ---
-#	Feature Name	Description	Purpose / Benefit	Status	Notes
-1	Async Execution	Use asyncio + aiohttp for concurrent data fetching	Faster data gathering, lower latency	🔜 Planned	Enhances performance with multiple API calls.
-2	Daily Max Trade Cap	Enforce daily trade budget limit (e.g., $100)	Prevents over-trading, controls risk	✅ Done	Already implemented.
-3	Track Win/Loss Ratio	Analyze last 10+ trades win% and average PnL	Measures strategy effectiveness	🔜 Planned	Helps decide when to go live from paper mode.
-4	Manual Trade Controls via Telegram	Allow manual buy/sell commands with logging and confirmation	Human override & accountability	✅ Done	Inline buttons + restricted access implemented.
-5	Historical Sentiment Data for Backtesting	Integrate archived sentiment data for realistic backtests	Improves strategy validation	🔜 Planned	Requires data archive or paid API.
-6	Market Depth & Slippage Consideration	Factor bid-ask spread & liquidity into order execution	Reduces bad fills & slippage	🔜 Planned	Useful for low-liquidity assets.
-7	AI Integration	Use GPT/AI for live signal explanation & labeling	Smarter trade reasoning & debugging	🔜 Planned	Could improve trade transparency.
-8	Streamlit Dashboard Enhancements	Real-time charts, manual override, P&L dashboards	Improves monitoring & control	⏳ In Progress	Connects to Firestore for live data.
-9	Live Exchange Execution	Move from paper to real authenticated exchange orders	Enables real profits	🔜 Planned	Using Binance API with full error handling.
-10	Advanced News Sentiment AI	Include top 5 crypto RSS feeds, Reddit trends, weighted scoring	More accurate sentiment analysis	🔜 Planned	Expands beyond CryptoPanic.
-11	Multi-Exchange Support	Add KuCoin, Bybit, Kraken alongside Binance	Increases trading opportunities	🔜 Planned	Improves diversification.
-12	Machine Learning Signal Boost	Use ML (XGBoost, LightGBM) to detect high-confidence trades	Increases win rate	🔜 Planned	Needs labeled historical data.
-13	Live Web Dashboard	Streamlit dashboard with charts, heatmaps, manual trades	Real-time control	🔜 Planned	Integrates with sentiment system.
-14	Trailing Stop-Loss & Smart Exit	Volatility-based TSL & adaptive exit rules	Maximizes profits, cuts losses	🔜 Planned	Replaces static SL/TP.
-15	Backtesting Module	Run strategy on historical data	Test before going live	🔜 Planned	Adjustable parameters for experiments.
-16	Portfolio Optimization	Auto-balance based on performance & risk	Improves capital allocation	🔜 Planned	Sentiment & volatility aware.
-17	Alert System	Telegram alerts for breakouts, whale activity, sentiment shifts	Faster reaction to market changes	🔜 Planned	Can include price targets.
-18	Config File System	Store all settings in JSON/YAML	Easy edits without touching code	🔜 Planned	Safer than editing Python files.
-19	Error Recovery & Retry Logic	Auto retries + Telegram error alerts	Improves bot uptime	🔜 Planned	Critical for 24/7 running.
+📅 Bot Roadmap & Planned Features
+This bot is actively developed and evolving toward a fully autonomous, AI-enhanced crypto trading system.
+Below is the roadmap of completed and planned features:
+
+✅ Completed Features
+Daily Max Trade Cap → Prevents over-trading and controls daily risk.
+
+Manual Trade Controls via Telegram → Supports /buy /sell /cancel commands, inline Buy/Sell buttons, and restricted access.
+
+🔜 Planned & In-Progress Features
+⚡ Async Execution – Use asyncio + aiohttp for concurrent API calls → Faster data gathering, lower latency.
+
+📊 Win/Loss Tracking – Maintain stats for last N trades (win %, average PnL) → Evaluate strategy performance.
+
+📈 Historical Sentiment for Backtesting – Integrate archived sentiment feeds for realistic backtests.
+
+💧 Market Depth & Slippage Handling – Factor in bid-ask spread & liquidity for better fills.
+
+🤖 AI Signal Explanation – GPT-powered trade reasoning & decision labeling for transparency.
+
+📊 Streamlit Dashboard Enhancements – Real-time charts, manual override controls, P&L dashboard linked to Firestore. (In Progress)
+
+🔑 Live Exchange Execution – Execute authenticated trades on Binance with error handling.
+
+📰 Advanced News Sentiment AI – Weighted sentiment scoring from CryptoPanic + top RSS feeds + Reddit trends.
+
+🌐 Multi-Exchange Support – Add KuCoin, Bybit, Kraken for diversified opportunities.
+
+📚 Machine Learning Signal Boost – Train ML models (XGBoost, LightGBM) for higher-confidence trade detection.
+
+📊 Live Web Dashboard – Heatmaps, live signals, and manual trades from browser interface.
+
+📉 Trailing Stop-Loss & Smart Exit – Volatility-based TSL and adaptive exit rules for profit protection.
+
+🧪 Backtesting Module – Run strategy simulations with adjustable parameters on historical data.
+
+📂 Portfolio Optimization – Auto-adjust allocations based on asset performance & volatility.
+
+🚨 Alert System – Telegram notifications for price breakouts, whale activity, and sentiment spikes.
+
+⚙ Config File System – Store settings in JSON/YAML for safer non-code changes.
+
+🛠 Error Recovery & Retry Logic – Auto retries, failover handling, and Telegram error alerts for 24/7 uptime.
 
 ---
 
