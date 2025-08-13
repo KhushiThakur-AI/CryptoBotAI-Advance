@@ -28,52 +28,84 @@
 
 ---
 
-🚀 Features
-📊 Multi-Indicator Strategy
+🚀 Features (Old Bot)
+
+1. Multi-Indicator Strategy
 RSI – Overbought/oversold detection
-
 MACD – Momentum shift confirmation
-
 EMA – Trend following
-
 ADX – Trend strength
-
 Bollinger Bands – Volatility breakout
 
-Stochastic RSI – Entry timing (where used)
-
-🛡 Risk Management
-✅ Stop-Loss (SL), ✅ Take-Profit (TP), ✅ Trailing Stop-Loss (TSL)
-
+2. Risk Management
+✅ Stop Loss (SL)
+✅ Take Profit (TP)
+✅ Trailing Stop Loss (TSL)
 ✅ Daily Max Loss Guard
+✅ Cooldown + Duplicate Trade Blocker
 
-✅ Cooldown + Duplicate-Trade Blocker
+3. Smart Trade Logic
+Trade Confidence Score (based on multiple indicators)
+Per-coin configuration using config.json
 
-🧠 Smart Trade Logic
-Trade Confidence Score (weighted multi-indicator confirmation)
+4. Telegram Alerts
+Trade Executed (BUY/SELL)
+SL/TP/TSL Triggered
+ Trade Summary (daily/weekly)
+Capital issues / loss guard
+Google Sheets Logging
+Trade history
+P&L tracking
+Per-symbol worksheets (BTCUSDT, ETHUSDT, etc.)
 
-Per-coin configuration via config.json
+## ✅ Latest 25+ Updates (Complete & Recent Work)
 
-Multi-timeframe confirmation (e.g., 15m + 1h)
-
-📤 Telegram Alerts
-📈 Trade Executed (BUY/SELL)
-
-🚨 SL/TP/TSL Triggered
-
-🧾 Trade Summary (daily/weekly)
-
-⚠️ Capital issues / loss guard
-
-📄 Google Sheets Logging
-✅ Trade history
-
-✅ P&L tracking
-
-✅ Per-symbol worksheets (e.g., BTCUSDT, ETHUSDT)
-
-Optional: Firestore for real-time logging/state.
+| #  | Feature / Development                      | Description                                                  | Why It’s Important                     | Priority / Status       | Notes                                           |
+|----|---------------------------------------------|--------------------------------------------------------------|------------------------------------------|-------------------------|-------------------------------------------------|
+| 1  | Add More Indicators                        | ADX + Bollinger added; use top-2 performers for confirmation/points | Improves signal accuracy                | DONE                    | ADX = trend strength; BB = breakouts            |
+| 2  | Real Balance Awareness                     | Check USDT wallet before trading                             | Prevents over-trading                    | DONE                    | `get_usdt_balance()` pre-trade                  |
+| 3  | Smart Capital Allocation                   | % of wallet per trade (e.g., 20–30%)                         | Safer, scales with account               | DONE                    | Dynamic sizing by available balance             |
+| 4  | Diversification Logic                       | Invest across 2–3 strongest coins                            | Lowers risk, more opportunities          | DONE                    | Pick top scores across symbols                  |
+| 5  | Trailing Stop-Loss (TSL)                   | Lock profits as price rises                                  | Avoids giving back gains                 | DONE                    | Dynamic TSL vs static SL/TP                      |
+| 6  | Daily Max Loss Guard                       | Halt if loss > threshold/day                                 | Avoid wipeouts                           | DONE                    | e.g., stop if loss > $3/day                      |
+| 7  | Trade Confidence Scoring                   | Weighted indicators + thresholds                             | Better trade quality                     | DONE                    | EMA crossover + ADX>20, etc.                     |
+| 8  | Trade Journal Logging                      | Log full reasons per trade                                   | Audit & debugging                        | DONE                    | Google Sheets / Firestore                        |
+| 9  | Profit Target Exit                         | Auto-exit after X% profit                                    | Locks in wins                            | DONE                    | Fixed or dynamic targets                         |
+| 10 | Dynamic Rebalancing                        | Weekly realloc by performance                                | Optimizes portfolio                      | DONE                    | Track performance & update weights               |
+| 11 | Multi-Timeframe Confirmation               | Align 1h + 15m, etc.                                         | Avoid choppy entries                     | DONE                    | Timeframe confluence                            |
+| 12 | Basic & Advanced Signal Scoring            | Indicator weighting + trend filters                          | Smarter decisions                        | DONE                    | Thresholded weighted scores                      |
+| 13 | Market Filtering (Vol/Volume)              | Filter low-liquidity/high-volatility coins                   | Reduce risk/false signals                 | DONE                    | `min_volume_usd`, `max_volatility`               |
+| 14 | No-Trade Detection & Logging               | Log “No trade this cycle”                                    | Confirms bot alive                       | DONE                    | Telegram + Sheets                               |
+| 15 | Active Trade Hours Config                  | Run only in set windows (e.g., 14:00–20:00)                  | Target liquidity                         | DONE                    | Configurable in settings                         |
+| 16 | Live Exchange Execution                    | Move to real authenticated orders                            | Real profit capture                      | TO DO / LATER           | `python-binance` + confirms/safeguards           |
+| 17 | Adaptive Position Sizing                   | Size by score/volatility                                     | Optimize R/R                             | DONE                    | Confidence/ATR-aware sizing                      |
+| 18 | Enhanced Sentiment Scoring                 | VADER/TextBlob style scoring                                 | Better sentiment integration             | DONE                    | Beyond binary sentiment                          |
+| 19 | Sell Logic Upgrade                         | TSL/indicator-based exits                                    | Better exits                             | DONE                    | Beyond static TP/SL                              |
+| 20 | Volatility / Volume Filter                 | Block extreme vol/low volume                                 | Reduce false signals                     | DONE                    | Works with market filtering                      |
+| 21 | ML-Based Signal Booster (Exp.)             | XGBoost to score/boost signals                               | Potential win-rate gain                  | DONE (Experimental)     | Needs more data                                  |
+| 22 | External Config Files                      | JSON/YAML for settings                                       | Easier updates                           | DONE                    | Decoupled from code                              |
+| 23 | Streamlit Dashboard Enhancements           | Real-time charts, manual overrides, P&L                      | Better monitoring                        | IN PROGRESS / DONE      | Firestore live visualization                     |
+| 24 | Security Enhancements                      | HMAC, input validation, errors                               | Protect keys & stability                 | DONE                    | Critical for live trading                        |
+| 25 | Backtesting Logic                          | Historical simulation engine                                 | Test before live                         | DONE                    | Use price (and future sentiment)                 |
+| 26 | Modularization + Unit Testing              | Split modules + add tests                                    | Maintainable & reliable                  | DONE (baseline)         | More tests planned                               |
+| 27 | Retry & Failover Logic                     | Auto-retry, fallback caching, Telegram alerts                | More uptime                              | DONE                    | Handle transient API errors                      |
+| 28 | Real Symbol-Based News                     | CryptoPanic + RSS per symbol                                 | Real-time news sentiment                 | DONE                    | Proper integration, Replit-ready                 |
 ---
+## 🔭 Future Updates & Backlog (Planned / In Progress)
+
+### A. High-Impact Next Steps (29–35)
+
+| #  | Feature                          | What It Does                                         | Benefit                          | Status    | Notes                               |
+|----|----------------------------------|------------------------------------------------------|-----------------------------------|-----------|-------------------------------------|
+| 29 | Async Execution                  | `asyncio` + `aiohttp` for concurrent fetch           | Faster cycles, lower latency      | 🔜 Planned| Best for multi-API workloads        |
+| 30 | Daily Max Trade Cap               | Enforce daily budget (e.g., $100)                    | Risk control                      | ✅ Done   | Already implemented                 |
+| 31 | Track Win/Loss Ratio              | Rolling last 10+ trades win% & avg PnL                | Go-live readiness                  | 🔜 Planned| Decision aid                         |
+| 32 | Manual Trade via Telegram         | Inline/manual BUY/SELL with logging                   | Human override                     | ✅ Done   | Restricted access                    |
+| 33 | Historical Sentiment for Backtest | Use archived sentiment data                           | Realistic backtests                | 🔜 Planned| Needs archive/3rd-party              |
+| 34 | Market Depth & Slippage           | Model bid/ask & liquidity                             | Realistic fills                    | 🔜 Planned| Order-book aware                     |
+| 35 | AI Integration                    | GPT explains/labels signals                           | Transparency & debugging           | 🔜 Planned| Auto trade labeling                  |
+---
+
 
 ## Quick Start
 ```bash
