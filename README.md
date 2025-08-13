@@ -186,7 +186,7 @@ IMP = Please ensure your code follows the existing style and includes documentat
 ## License
 This project is licensed under the **MIT License**. You can view the full terms in the [LICENSE file](https://github.com/KhushiThakur-AI/CryptoBotAI-Advance/blob/main/LICENSE).
 ---
-###Keyword SEO
+### Keyword SEO
 advanced AI crypto trading bot, automated crypto trading, cryptocurrency bot, algorithmic trading software, Binance trading bot, crypto market analysis, sentiment-based trading, AI trading system, machine learning crypto bot, real-time trading dashboard
 
 ```bash
