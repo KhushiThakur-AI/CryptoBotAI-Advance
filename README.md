@@ -132,3 +132,49 @@ SECRET_KEY=your_secret_key
 
 4. Run the Application
 python main.py
+---
+
+###Architecture
+The project follows a modular architecture for scalability and maintainability:
+Core Modules – Main application logic and services.
+API Layer – Handles requests, responses, and third-party API integration.
+Database Layer – Manages data storage and retrieval.
+Utilities – Helper functions and reusable scripts.
+Configuration – Environment-specific settings.
+UI / Dashboard (if applicable) – Frontend or monitoring interface.
+
+Flow Overview:
+Input is received from API/Frontend.
+Processed through core logic modules.
+Data is fetched/stored in the database.
+Output is returned or displayed in the UI.
+
+###Roadmap
+Planned improvements and upcoming features:
+ Add automated testing coverage.
+ Enhance error handling and logging.
+ Implement caching for faster performance.
+ Add multi-language support.
+ Integrate advanced analytics and reporting.
+ Optimize for mobile and tablet interfaces.
+ Expand API integrations for new data sources.
+
+###Contributing
+We welcome contributions!
+
+Steps to Contribute:
+Fork the repository.
+Create a new branch:
+
+
+git checkout -b feature/YourFeature
+Commit changes:
+git commit -m "Add your message here"
+Push to your fork:
+git push origin feature/YourFeature
+Open a Pull Request on GitHub.
+
+Please ensure your code follows the existing style and includes documentation for new features.
+
+License
+ 
