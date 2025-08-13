@@ -174,10 +174,10 @@ We welcome contributions! 🎉
    ```bash
    git checkout -b feature/YourFeature
 3. Commit changes:
-
-git commit -m "Add your message here"
+     ```bash
+     git commit -m "Add your message here"
 Push to your fork:
-
+   ```bash
 git push origin feature/YourFeature
 Open a Pull Request on GitHub.
 
