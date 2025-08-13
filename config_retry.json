@@ -1,0 +1,55 @@
+
+{
+  "retry_settings": {
+    "max_retries": 3,
+    "base_delay": 1.0,
+    "max_delay": 60.0,
+    "backoff_multiplier": 2.0,
+    "cache_expiry_minutes": {
+      "prices": 2,
+      "klines": 10,
+      "balance": 5,
+      "ticker_data": 3
+    }
+  },
+  "circuit_breaker_settings": {
+    "binance_market_data": {
+      "failure_threshold": 3,
+      "recovery_timeout": 30
+    },
+    "binance_trading": {
+      "failure_threshold": 2,
+      "recovery_timeout": 60
+    },
+    "google_sheets": {
+      "failure_threshold": 5,
+      "recovery_timeout": 120
+    },
+    "telegram": {
+      "failure_threshold": 3,
+      "recovery_timeout": 30
+    },
+    "firebase": {
+      "failure_threshold": 4,
+      "recovery_timeout": 60
+    }
+  },
+  "alert_settings": {
+    "cooldown_minutes": 10,
+    "priority_levels": {
+      "low": "⚠️",
+      "medium": "🚨",
+      "high": "🔴",
+      "critical": "💥"
+    }
+  },
+  "health_check": {
+    "interval_seconds": 3600,
+    "timeout_seconds": 30,
+    "endpoints": [
+      "https://api.binance.com/api/v3/ping",
+      "https://api.telegram.org",
+      "https://sheets.googleapis.com"
+    ]
+  }
+}

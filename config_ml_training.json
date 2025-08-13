@@ -1,0 +1,30 @@
+
+{
+  "ml_data_collection": {
+    "enabled": true,
+    "log_frequency": "every_cycle",
+    "min_data_points_for_training": 100,
+    "retrain_frequency_days": 7,
+    "outcome_classification_thresholds": {
+      "win_strong_usd": 10.0,
+      "win_small_usd": 0.1,
+      "loss_small_usd": -5.0,
+      "loss_strong_usd": -10.0
+    },
+    "features_to_collect": [
+      "market_data",
+      "technical_indicators", 
+      "signal_scores",
+      "portfolio_context",
+      "trade_execution",
+      "outcomes"
+    ],
+    "auto_retrain": false,
+    "backup_training_data": true
+  },
+  "model_performance_tracking": {
+    "track_prediction_accuracy": true,
+    "min_accuracy_threshold": 0.60,
+    "performance_alert_threshold": 0.55
+  }
+}
