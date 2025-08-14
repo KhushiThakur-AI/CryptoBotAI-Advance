@@ -94,7 +94,7 @@ Per-symbol worksheets (BTCUSDT, ETHUSDT, etc.)
 | 25 | Backtesting Logic                          | Historical simulation engine                                 | Test before live                         | DONE                    | Use price (and future sentiment)                 |
 | 26 | Modularization + Unit Testing              | Split modules + add tests                                    | Maintainable & reliable                  | DONE (baseline)         | More tests planned                               |
 | 27 | Retry & Failover Logic                     | Auto-retry, fallback caching, Telegram alerts                | More uptime                              | DONE                    | Handle transient API errors                      |
-| 28 | Real Symbol-Based News                     | CryptoPanic + RSS per symbol                                 | Real-time news sentiment                 | DONE                    | Proper integration, Replit-ready                 |
+| 28 | Real Symbol-Based News                     | CryptoPanic + RSS per symbol + Reddit                              | Real-time news sentiment                 | DONE                    | Proper integration, Replit-ready                 |
 ---
 ## 🔭 Future Updates & Backlog (Planned / In Progress)
 
@@ -108,7 +108,7 @@ Per-symbol worksheets (BTCUSDT, ETHUSDT, etc.)
 | 32 | Manual Trade via Telegram         | Inline/manual BUY/SELL with logging                   | Human override                     | ✅ Done   | Restricted access                    |
 | 33 | Historical Sentiment for Backtest | Use archived sentiment data                           | Realistic backtests                | 🔜 Planned| Needs archive/3rd-party              |
 | 34 | Market Depth & Slippage           | Model bid/ask & liquidity                             | Realistic fills                    | 🔜 Planned| Order-book aware                     |
-| 35 | AI Integration                    | GPT explains/labels signals                           | Transparency & debugging           | 🔜 Planned| Auto trade labeling                  |
+| 35 | AI Integration                    |Chat GPT API Integration, crypto market existing bots                          | Transparency,market analysis & debugging           | 🔜 Planned| Auto trade labeling                  |
 ---
 ## Quick Start
 
